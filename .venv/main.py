@@ -15,5 +15,3 @@ print(f"Свободно: {free_bytes} байт")
 print(f"Использовано {free_procent} %")
 
 print("Test Git")
-
-print("Test Git 2")
