@@ -13,5 +13,3 @@ print(f"Общая емкость: {total_bytes} байт")
 print(f"Использовано: {used_bytes} байт")
 print(f"Свободно: {free_bytes} байт")
 print(f"Использовано {free_procent} %")
-
-print("Test Git")
