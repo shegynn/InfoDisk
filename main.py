@@ -1,6 +1,6 @@
 import psutil
 import configparser
-# from bot import sendMessage
+from bot import sendMessage
 from time import sleep
 
 config = configparser.ConfigParser()  # создаём объекта парсера
@@ -18,7 +18,7 @@ def check_free_space():
     free_procent = round(free_bytes * 100 / total_bytes, 0)
 
     if free_procent <= SignalProcent:
-        print(f"На диске осталось {free_procent}%")
+        sendMessage(f"На диске осталось {free_procent}%")
 
 while True:
     check_free_space()
